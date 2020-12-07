@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>recursos/images/sprite.png</file>
+        <file>recursos/images/arquero.png</file>
+        <file>recursos/images/elfo.png</file>
+        <file>recursos/images/guerrera.png</file>
+        <file>recursos/images/guerrero.png</file>
+        <file>recursos/images/mago.png</file>
+        <file>recursos/images/ogro.png</file>
+    </qresource>
+</RCC>

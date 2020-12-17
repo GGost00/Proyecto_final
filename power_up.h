@@ -4,8 +4,11 @@
 
 class power_up
 {
+private:
+    int tipo,posx,posy;
 public:
     power_up();
+    void editar();
 };
 
 #endif // POWER_UP_H

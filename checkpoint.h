@@ -6,8 +6,13 @@
 class checkpoint : public QObject
 {
     Q_OBJECT
+private:
+    int posx,posy,ancho,largo;
 public:
     explicit checkpoint(QObject *parent = nullptr);
+
+    void crear_checkpoint();
+    void borrar_checkpoint();
 
 signals:
 

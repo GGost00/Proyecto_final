@@ -6,6 +6,9 @@
 class armas : public QObject
 {
     Q_OBJECT
+private:
+    int daño;
+
 public:
     explicit armas(QObject *parent = nullptr);
 

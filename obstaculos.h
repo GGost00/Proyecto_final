@@ -8,7 +8,7 @@ class obstaculos : public QObject
 {
     Q_OBJECT
 private:
-    int ancho,alto,tipo,vida,daño,posx,posy,velocidad;
+    int ancho,alto,tipo,vida,dano,posx,posy,velocidad;
 public:
     explicit obstaculos(QObject *parent = nullptr);
     void destruir_objrto();

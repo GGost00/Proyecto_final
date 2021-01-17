@@ -1,5 +1,15 @@
 #include "personajes.h"
 
+int personajes::getPosx() const
+{
+    return posx;
+}
+
+int personajes::getPosy() const
+{
+    return posy;
+}
+
 personajes::personajes(int ataque_, int tamanox_, int tamanoy_, int posx_, int posy_, int vida_)
 {
     ataque=ataque_;
@@ -13,6 +23,7 @@ personajes::personajes(int ataque_, int tamanox_, int tamanoy_, int posx_, int p
 
     setPos(posx,posy);
     pixmap = new QPixmap(":/recursos/images/sprite.png");
+    setScale(0.5);
 }
 void personajes::up()
 {

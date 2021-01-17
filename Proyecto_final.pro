@@ -15,6 +15,7 @@ SOURCES += \
     mainwindow.cpp \
     mapa.cpp \
     obstaculos.cpp \
+    pared.cpp \
     personajes.cpp \
     portales.cpp \
     power_up.cpp \
@@ -27,6 +28,7 @@ HEADERS += \
     mainwindow.h \
     mapa.h \
     obstaculos.h \
+    pared.h \
     personajes.h \
     portales.h \
     power_up.h \

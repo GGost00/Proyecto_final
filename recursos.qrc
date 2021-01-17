@@ -7,5 +7,6 @@
         <file>recursos/images/guerrero.png</file>
         <file>recursos/images/mago.png</file>
         <file>recursos/images/ogro.png</file>
+        <file>recursos/images/sin nombre.png</file>
     </qresource>
 </RCC>

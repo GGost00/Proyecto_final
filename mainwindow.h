@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <iostream>
+#include <fstream>
 #include <QPainter>
 #include <QGraphicsItem>
 #include <QKeyEvent>
@@ -11,7 +13,9 @@
 #include<QGraphicsView>
 #include<QWidget>
 #include "personajes.h"
+#include "pared.h"
 
+using namespace std;
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -23,15 +27,15 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     void Guardar_partida();
+    QList<pared *> paredes;
     ~MainWindow();
 
 
 private:
     Ui::MainWindow *ui;
-    QGraphicsScene *scene;
+    QGraphicsScene *scene = new QGraphicsScene(this);
+    QGraphicsView * view = new QGraphicsView(this);
     personajes *personaje;
     void keyPressEvent(QKeyEvent * evento);
-
-    float x,y,ancho,alto;
 };
 #endif // MAINWINDOW_H

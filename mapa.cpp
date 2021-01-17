@@ -20,7 +20,7 @@ int mapa::getAlto() const
     return alto;
 }
 
-mapa::mapa()
+mapa::mapa(int Ancho, int Alto, int Valor)
 {
     
 }

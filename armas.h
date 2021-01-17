@@ -7,7 +7,7 @@ class armas : public QObject
 {
     Q_OBJECT
 private:
-    int daño;
+    int dano;
 
 public:
     explicit armas(QObject *parent = nullptr);
